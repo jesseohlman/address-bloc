@@ -9,6 +9,7 @@ module.exports =  class MenuController {
                 message: "Please choose from an option below: ",
                 choices: [
                     "Add new contact",
+                    "Display today's date",
                     "Exit"
                 ]
             }
@@ -25,6 +26,9 @@ module.exports =  class MenuController {
                     break;
                 case "Exit":
                     this.exit();
+                    break;
+                case "Display today's date":
+                    this.getDate();
                 default:
                     console.log("Invalid Input");
                     this.main();
@@ -48,5 +52,10 @@ module.exports =  class MenuController {
         this.clear();
         console.log('addContact called');
         this.main();
+    }
+
+    getDate(){
+        var date = new Date();
+        console.log(date);
     }
 }

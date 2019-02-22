@@ -11,5 +11,9 @@
     "url": "\u0016https://github.com/jesseohlman/address-bloc.git"
   },
   "author": "Jesse Ohlman",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "date-and-time": "^0.6.3",
+    "inquirer": "^5.1.0"
+  }
 }
