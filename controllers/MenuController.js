@@ -58,4 +58,8 @@ module.exports =  class MenuController {
         var date = new Date();
         console.log(date);
     }
+
+    getContactCount(){
+        return this.contacts.length;
+    }
 }
