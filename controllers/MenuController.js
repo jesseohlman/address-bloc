@@ -1,4 +1,5 @@
 const inquirer = require('inquirer');
+const ContactController = require("./ContactController");
 
 module.exports =  class MenuController {
     constructor(){
@@ -14,11 +15,12 @@ module.exports =  class MenuController {
                 ]
             }
         ];
-        this.contacts = [];
+        
+        this.book = new ContactController();
     }
 
     main(){
-       console.log('Welcom to AddressBloc!');
+       console.log('Welcome to AddressBloc!');
        inquirer.prompt(this.mainMenuQuestions).then((response) => {
            switch(response.mainMenuChoice){
                case "Add new contact":
@@ -29,6 +31,7 @@ module.exports =  class MenuController {
                     break;
                 case "Display today's date":
                     this.getDate();
+                    break;
                 default:
                     console.log("Invalid Input");
                     this.main();
