@@ -4,7 +4,7 @@
   "description": "An app to model an address book in node",
   "main": "\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001bapp.js\u001b[C\u001b\u001b[C\u001b[C\u001b[C",
   "scripts": {
-    "test": "set NODE_ENV=test && jasmine"
+    "test": "set NODE_ENV=test&& jasmine"
   },
   "repository": {
     "type": "git",
